@@ -1,10 +1,10 @@
 ---
 title: Від букв до цифр - Аналіз чату в Телеграмі
-description: Examples of text, typography,
-date: 2025-04-10 11:00 
-categories: [Test1, Test2]
+description: Перетворіть повсякденні переписки у захопливі візуалізації даних. Дізнайтеся, як експортувати, аналізувати та візуалізувати історію чатів у Телеграмі, щоб розкрити приховані патерни вашого спілкування.
+date: 2025-04-10 11:00 +0200
+categories: [Data Analysis]
 tags: [visualisation, telegram, data analysis]
-author: AdobyY
+author: adoby
 image:
   path: https://miro.medium.com/v2/resize:fit:2000/format:webp/1*KdsqebBjOD1KlazyoPOXMA.png
 ---
