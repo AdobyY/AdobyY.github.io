@@ -6,7 +6,7 @@ categories: [Projects]
 tags: [app, telegram, data analysis]
 author: adoby
 image:
-  path: img\2025-04-12\2025-04-12.png
+  path: img/2025-04-12/2025-04-12.png
 ---
 
 ## Telegram Chat Analyzer
