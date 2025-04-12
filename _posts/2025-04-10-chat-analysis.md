@@ -188,7 +188,7 @@ date_grouped.to_csv('date_grouped_by_month.csv', index=False, encoding='utf-8-si
 
 Тому експорт переписки — це не просто архів, а можливість побачити діалог із сторони, де кожне повідомлення стає частиною більшої картини. І якщо придивитися, ці дані розповідають історію не лише про те, що було сказано, але й про те, як — і, можливо, навіть чому.
 
-P.S. Посилання на GitHub з повним кодом з’явиться тут пізніше. Stay Tuned
+P.S. Посилання на GitHub з повним кодом : <https://github.com/AdobyY/Telegram-chat-analyzer/blob/main/EDA.ipynb>
 
 
 [^flourish]: <https://flourish.studio/>
