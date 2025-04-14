@@ -99,7 +99,7 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 # avatar: https://avatars.githubusercontent.com/u/81767251?s=400&u=6790dfbaa2443c74c7c7e6ba08cc67fb7dcd1be4&v=4
-avatar: img\ava.jpg
+avatar: img/ava.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
