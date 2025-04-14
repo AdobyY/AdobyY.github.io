@@ -19,10 +19,9 @@ order: 4
 
 ## Проєкти
 
-Серед моїх проєктів:
-
 - [Telegram Chat Analyzer](https://github.com/AdobyY/telegram-chat-analyzer) — інтерактивний веб-додаток для аналізу чатів у Telegram
-- [Rieltor Bot](https://github.com/AdobyY/rieltor_bot) - телеграм бот для ріелторської компанії, яка здає квартири
+- [Image Classification System](https://github.com/AdobyY/ImageClassificationSystem) — програма, що дозволяє користувачам завантажувати, керувати та використовувати моделі машинного навчання для класифікації зображень
+- [Rieltor Bot](https://github.com/AdobyY/rieltor_bot) — телеграм бот для ріелторської компанії, яка здає квартири
 - Інструменти для обробки та візуалізації даних
 
 ## Навички
