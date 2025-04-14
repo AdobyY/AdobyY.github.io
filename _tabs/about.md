@@ -22,6 +22,7 @@ order: 4
 Серед моїх проєктів:
 
 - [Telegram Chat Analyzer](https://github.com/AdobyY/telegram-chat-analyzer) — інтерактивний веб-додаток для аналізу чатів у Telegram
+- [Rieltor Bot](https://github.com/AdobyY/rieltor_bot) - телеграм бот для ріелторської компанії, яка здає квартири
 - Інструменти для обробки та візуалізації даних
 
 ## Навички
