@@ -1,0 +1,32 @@
+<section id="resume-toc-wrapper" class="position-sticky ps-0 pe-4 pb-4">
+  <h2 class="panel-heading ps-3 pb-2 mb-0">On this page</h2>
+  <nav id="resume-toc" aria-label="Resume sections"></nav>
+</section>
+
+<style>
+  #resume-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #resume-toc li + li {
+    margin-top: 0.15rem;
+  }
+
+  #resume-toc a {
+    border-left: 2px solid transparent;
+    color: var(--text-muted-color);
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.35;
+    padding: 0.35rem 0 0.35rem 1rem;
+    text-decoration: none;
+  }
+
+  #resume-toc a:hover,
+  #resume-toc a.is-active-link {
+    border-left-color: var(--link-color);
+    color: var(--link-color);
+  }
+</style>

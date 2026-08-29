@@ -1,11 +1,14 @@
 ---
 title: Resume
+layout: resume
 icon: fas fa-id-card
 order: 5
-toc: false
+toc: true
 ---
 
 # Bohdan Yarinko
+
+**Software Engineer · Technical Project Lead**
 
 [yarinko.b@gmail.com](mailto:yarinko.b@gmail.com) · [LinkedIn](https://www.linkedin.com/in/bohdan-yarinko-338816269/) · [GitHub](https://github.com/AdobyY)
 
@@ -55,7 +58,7 @@ Alongside continued development and support of Europarts Ukraine systems, curren
 - Designed multi-customer infrastructure: isolated environments, separate databases, containerized deployments, centralized observability, secure administrative access, automated provisioning, repeatable deployments, and backups.
 - Automated cloud infrastructure provisioning and Linux configuration using Terraform / OpenTofu and Ansible.
 - Built current Pascore infrastructure on Hetzner, with WireGuard private administrative access, self-hosted Coolify, GitHub CI/CD, and centralized Grafana, Loki, and Promtail observability.
-- Developed and deployed the [Pascore product website](https://pas-core.com).
+- Developed, designed and deployed the [Pascore product website](https://pas-core.com).
 - Designed a reusable B2B ecommerce storefront to be offered together with Pascore.
 
 ## Selected Projects
@@ -112,11 +115,11 @@ Designed, developed, and deployed a second production B2B ecommerce platform bui
 - Backend development, product catalog integration, search, pricing, product synchronization, and external integrations.
 - Infrastructure configuration, deployment, production operation, and troubleshooting.
 
-### Pascore Product Website
+### [pas-core.com](https://pas-core.com)
 
 Developed and deployed the product website, including development, deployment, server and domain configuration, CI/CD, and production operation.
 
-### Military Aircraft Image Classification
+### [Military Aircraft Image Classification](https://github.com/AdobyY/ImageClassificationSystem)
 
 Developed an image-classification system capable of recognizing different types of military aircraft.
 
@@ -167,13 +170,13 @@ Translate business needs into technical solutions; design architecture; select t
 
 ## Education
 
-### [University Name]
+### National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
 
 **Master's Degree - Systems Analysis** · 2024 - 2025
 
 Studied software systems, mathematical and systems modelling, data analysis, programming, machine learning, and deep learning. Focus areas included systems analysis, programming, data processing, machine learning, deep learning, mathematical modelling, model training and evaluation, and working with structured and unstructured datasets.
 
-### [University Name]
+### National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
 
 **Bachelor's Degree - Economic Cybernetics** · 2020 - 2024
 

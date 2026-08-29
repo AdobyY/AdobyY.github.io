@@ -1,0 +1,37 @@
+---
+layout: default
+hide_access_panel: true
+panel_includes:
+  - resume-toc
+---
+
+{% include lang.html %}
+
+<article class="px-1" data-toc="true">
+  {% assign tab_key = page.title | downcase %}
+  {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+  <h1 class="dynamic-title" data-toc-skip>{{ title }}</h1>
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toc = document.getElementById('resume-toc');
+
+    if (!toc || !window.tocbot) {
+      return;
+    }
+
+    window.tocbot.init({
+      tocSelector: '#resume-toc',
+      contentSelector: 'main > article .content',
+      headingSelector: 'h2',
+      orderedList: false,
+      collapseDepth: 1,
+      headingsOffset: 96,
+      scrollSmoothOffset: -96
+    });
+  });
+</script>
