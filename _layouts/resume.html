@@ -7,7 +7,7 @@ panel_includes:
 
 {% include lang.html %}
 
-<article class="px-1" data-toc="true">
+<article class="px-1">
   {% assign tab_key = page.title | downcase %}
   {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
   <h1 class="dynamic-title" data-toc-skip>{{ title }}</h1>
@@ -18,20 +18,48 @@ panel_includes:
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var toc = document.getElementById('resume-toc');
+    var nav = document.getElementById('resume-toc');
+    var headings = Array.from(document.querySelectorAll('main > article .content > h2'));
+    var links = [];
 
-    if (!toc || !window.tocbot) {
+    if (!nav || !headings.length) {
       return;
     }
 
-    window.tocbot.init({
-      tocSelector: '#resume-toc',
-      contentSelector: 'main > article .content',
-      headingSelector: 'h2',
-      orderedList: false,
-      collapseDepth: 1,
-      headingsOffset: 96,
-      scrollSmoothOffset: -96
+    headings.forEach(function (heading, index) {
+      if (!heading.id) {
+        heading.id = 'resume-section-' + index;
+      }
+
+      var link = document.createElement('a');
+      link.className = 'resume-toc-link';
+      link.href = '#' + heading.id;
+      link.textContent = heading.textContent;
+      nav.appendChild(link);
+      links.push({ heading: heading, link: link });
     });
+
+    function setActive(activeHeading) {
+      links.forEach(function (item) {
+        var active = item.heading === activeHeading;
+        item.link.toggleAttribute('aria-current', active);
+      });
+    }
+
+    function updateActiveLink() {
+      var activeHeading = headings[0];
+
+      headings.forEach(function (heading) {
+        if (heading.getBoundingClientRect().top <= 150) {
+          activeHeading = heading;
+        }
+      });
+
+      setActive(activeHeading);
+    }
+
+    document.addEventListener('scroll', updateActiveLink, { passive: true });
+    window.addEventListener('resize', updateActiveLink);
+    updateActiveLink();
   });
 </script>

@@ -5,25 +5,17 @@
 
 <style>
   #resume-toc-wrapper {
-    max-height: calc(100vh - 6rem);
-    overflow-y: auto;
     position: sticky;
-    scrollbar-color: var(--btn-border-color) transparent;
-    scrollbar-width: thin;
     top: 5rem;
   }
 
-  #resume-toc ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  #resume-toc {
+    display: grid;
+    gap: 0.2rem;
+    padding-top: 0.25rem;
   }
 
-  #resume-toc li + li {
-    margin-top: 0.15rem;
-  }
-
-  #resume-toc a {
+  #resume-toc .resume-toc-link {
     background: transparent;
     border: 0 !important;
     border-radius: 0.45rem;
@@ -36,14 +28,14 @@
     transition: background-color 160ms ease, color 160ms ease;
   }
 
-  #resume-toc a:hover {
-    background: color-mix(in srgb, var(--text-color) 8%, transparent);
+  #resume-toc .resume-toc-link:hover {
+    background: color-mix(in srgb, var(--text-color) 7%, transparent);
     color: var(--text-color);
   }
 
-  #resume-toc a.is-active-link {
-    background: color-mix(in srgb, var(--link-color) 14%, transparent);
-    color: var(--link-color);
+  #resume-toc .resume-toc-link[aria-current] {
+    background: color-mix(in srgb, var(--text-color) 12%, transparent);
+    color: var(--text-color);
     font-weight: 600;
   }
 </style>
