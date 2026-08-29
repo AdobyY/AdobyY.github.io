@@ -1,9 +1,8 @@
 ---
 title: Resume
-layout: resume
 icon: fas fa-id-card
 order: 5
-toc: true
+toc: false
 ---
 
 # Bohdan Yarinko
