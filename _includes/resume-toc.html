@@ -1,9 +1,18 @@
-<section id="resume-toc-wrapper" class="position-sticky ps-0 pe-4 pb-4">
+<section id="resume-toc-wrapper" class="ps-0 pe-4 pb-4">
   <h2 class="panel-heading ps-3 pb-2 mb-0">On this page</h2>
   <nav id="resume-toc" aria-label="Resume sections"></nav>
 </section>
 
 <style>
+  #resume-toc-wrapper {
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    position: sticky;
+    scrollbar-color: var(--btn-border-color) transparent;
+    scrollbar-width: thin;
+    top: 5rem;
+  }
+
   #resume-toc ul {
     list-style: none;
     margin: 0;
@@ -15,18 +24,26 @@
   }
 
   #resume-toc a {
-    border-left: 2px solid transparent;
+    background: transparent;
+    border: 0 !important;
+    border-radius: 0.45rem;
     color: var(--text-muted-color);
     display: block;
     font-size: 0.92rem;
     line-height: 1.35;
-    padding: 0.35rem 0 0.35rem 1rem;
+    padding: 0.45rem 0.7rem;
     text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease;
   }
 
-  #resume-toc a:hover,
+  #resume-toc a:hover {
+    background: color-mix(in srgb, var(--text-color) 8%, transparent);
+    color: var(--text-color);
+  }
+
   #resume-toc a.is-active-link {
-    border-left-color: var(--link-color);
+    background: color-mix(in srgb, var(--link-color) 14%, transparent);
     color: var(--link-color);
+    font-weight: 600;
   }
 </style>
