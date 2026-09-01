@@ -78,6 +78,8 @@ Designed the company's product-data processing architecture for receiving hetero
 - Built product, brand, and category normalization and mapping processes.
 - Optimized multi-million-row processing jobs and resolved production memory and performance issues.
 
+<p class="project-diagram-intro">The diagram below outlines the end-to-end flow from supplier ingestion and orchestration through data-warehouse transformations, internal business systems, APIs, and B2B delivery.</p>
+
 <a class="project-diagram" href="{{ '/img/resume/data-platform-delivery-architecture.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open Data Platform and Delivery Architecture diagram in full size"><img src="{{ '/img/resume/data-platform-delivery-architecture.png' | relative_url }}" alt="Data Platform and Delivery Architecture diagram" loading="lazy"></a>
 
 ### Pricing Management Platform
@@ -112,6 +114,8 @@ Designed, developed, deployed, and maintain a production B2B ecommerce platform 
 - Implemented search analytics and collaborated on technical SEO requirements with an external SEO company.
 - Personally deployed and operate Linux servers, PostgreSQL, Redis, Celery, Meilisearch, Docker, Nginx, Gunicorn, logging, monitoring, backups, and deployment updates.
 
+<p class="project-diagram-intro">The diagram below shows the production architecture behind the B2B application, including application services, infrastructure, observability, and external integrations.</p>
+
 <a class="project-diagram" href="{{ '/img/resume/b2b-application-production-architecture-final-clean.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open B2B Application Production Architecture diagram in full size"><img src="{{ '/img/resume/b2b-application-production-architecture-final-clean.png' | relative_url }}" alt="B2B Application Production Architecture diagram" loading="lazy"></a>
 
 ### [findtechsupply.com](https://findtechsupply.com)
@@ -124,6 +128,10 @@ Designed, developed, and deployed a second production B2B ecommerce platform bui
 ### [pas-core.com](https://pas-core.com)
 
 Developed and deployed the product website, including development, deployment, server and domain configuration, CI/CD, and production operation.
+
+<p class="project-diagram-intro">The diagram below presents the Pascore platform architecture, connecting product-data workflows, business services, integrations, infrastructure, and delivery channels.</p>
+
+<a class="project-diagram" href="{{ '/img/resume/pascore-full-platform-architecture.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open Pascore platform architecture diagram in full size"><img src="{{ '/img/resume/pascore-full-platform-architecture.png' | relative_url }}" alt="Pascore platform architecture diagram" loading="lazy"></a>
 
 ### [Military Aircraft Image Classification](https://github.com/AdobyY/ImageClassificationSystem)
 
