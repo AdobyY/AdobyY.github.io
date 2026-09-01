@@ -4,43 +4,34 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Привіт! Я **Богдан** — аналітик даних та ентузіаст у сфері Data Science, який захоплюється перетворенням даних у корисні інсайти та створенням інструментів для автоматизації та візуалізації.
+Hi, I’m **Bohdan** — a Software Engineer and Technical Project Lead who builds production systems around complex business and data workflows.
 
-## Мої інтереси
+My work spans backend development, data engineering, web applications, infrastructure, and automation. I enjoy taking a technical problem from its first requirements through architecture, implementation, deployment, and long-term production support.
 
-Я захоплююсь перетворенням даних у корисні візуалізації та знаходженням прихованих закономірностей у повсякденній інформації. Особливо мене цікавлять:
+## What I work on
 
-- 📊 Аналіз даних та візуалізація
-- 💻 Розробка веб-додатків
-- 🤖 Автоматизація процесів
-- 📱 Telegram боти та інструменти
+- Product-data platforms, supplier integrations, and pricing systems
+- B2B ecommerce applications and high-volume search
+- Python backend services, APIs, and data pipelines
+- Linux infrastructure, containerised deployments, monitoring, and troubleshooting
+- Business-process automation and AI-assisted workflows
 
-## Проєкти
+## Current focus
 
-- [Telegram Chat Analyzer](https://github.com/AdobyY/telegram-chat-analyzer) — інтерактивний веб-додаток для аналізу чатів у Telegram
-- [Image Classification System](https://github.com/AdobyY/ImageClassificationSystem) — програма, що дозволяє користувачам завантажувати, керувати та використовувати моделі машинного навчання для класифікації зображень
-- [Rieltor Bot](https://github.com/AdobyY/rieltor_bot) — телеграм бот для ріелторської компанії, яка здає квартири
-- Інструменти для обробки та візуалізації даних
+At **Europarts Ukraine**, I design and develop the systems that support product-data and sales operations: supplier ingestion, normalisation, matching, enrichment, translation, pricing, PIM, ecommerce publishing, search, and external feeds. These systems operate at a scale of approximately 2–3 million products and more than 10 million price records.
 
-## Навички
+I am also one of the key engineers behind [Pascore](https://pas-core.com), a commercial product-data automation platform built from the company’s internal engineering experience.
 
-- **Мови програмування**: Python
-- **Бібліотеки для аналізу даних**: Pandas, Matplotlib, Streamlit
-- **Data Science**: NumPy, SciPy, Scikit-learn
-- **Machine Learning**: TensorFlow, PyTorch, Keras
-- **Deep Learning**: OpenCV, Hugging Face Transformers
-- **Інструменти для роботи з даними**: SQL, Excel, Power BI
-- **Інструменти для контролю версій**: Git, GitHub
-- **Операційні системи**: Linux, Windows
+## Selected work
 
-## Зв'язок
+- [Pascore](https://pas-core.com) — product-data automation platform for businesses
+- [Military Aircraft Image Classification](https://github.com/AdobyY/ImageClassificationSystem) — machine-learning image classification project
+- [Telegram Chat Analyzer](https://github.com/AdobyY/telegram-chat-analyzer) — a tool for analysing group-chat activity
 
-Якщо вас зацікавили мої проєкти або ви маєте пропозиції щодо співпраці, зв'яжіться зі мною:
+For a fuller overview of my experience, projects, and technical stack, see my [Resume](/resume/).
 
-- GitHub: [AdobyY](https://github.com/AdobyY)
+## Get in touch
+
+- Email: [yarinko.b@gmail.com](mailto:yarinko.b@gmail.com)
 - LinkedIn: [Bohdan Yarinko](https://www.linkedin.com/in/bohdan-yarinko-338816269/)
-- Email: yarinko.b@gmail.com
-
----
-
-В цьому блозі я ділюся своїми думками, проєктами та навчальними матеріалами у сфері аналізу даних та розробки програмного забезпечення.
+- GitHub: [AdobyY](https://github.com/AdobyY)
