@@ -20,32 +20,70 @@ layout: compress
     {% endif %}
     <style>
       /* A restrained, high-contrast dark palette for the Chirpy theme. */
-      html[data-mode='dark'] {
-        --main-bg: #111214;
-        --mask-bg: rgba(17, 18, 20, 0.86);
-        --main-border-color: #303238;
-        --text-color: #f1f2f4;
-        --text-muted-color: #a9adb5;
-        --link-color: #f1f2f4;
+      :root {
+        --dark-main-bg: #111214;
+        --dark-mask-bg: rgba(17, 18, 20, 0.86);
+        --dark-border: #303238;
+        --dark-text: #f1f2f4;
+        --dark-muted-text: #a9adb5;
+        --dark-surface: #1a1c20;
+        --dark-sidebar: #17191d;
+        --dark-hover: #24272c;
+        --dark-active: #2b2e34;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-bs-theme]) {
+          --main-bg: var(--dark-main-bg);
+          --mask-bg: var(--dark-mask-bg);
+          --main-border-color: var(--dark-border);
+          --text-color: var(--dark-text);
+          --text-muted-color: var(--dark-muted-text);
+          --link-color: var(--dark-text);
+          --link-underline-color: #777b84;
+          --button-bg: var(--dark-surface);
+          --btn-border-color: #383b42;
+          --card-bg: var(--dark-surface);
+          --sidebar-bg: var(--dark-sidebar);
+          --sidebar-border-color: var(--dark-border);
+          --sidebar-hover-bg: var(--dark-hover);
+          --sidebar-active-bg: var(--dark-active);
+          --sidebar-btn-bg: #25282d;
+          --sidebar-btn-color: var(--dark-text);
+          --topbar-bg: rgba(17, 18, 20, 0.9);
+          --topbar-text-color: var(--dark-text);
+          --search-wrapper-bg: var(--dark-surface);
+          --search-wrapper-border: #3a3d44;
+          --search-icon-color: #b9bdc5;
+        }
+      }
+
+      :root[data-bs-theme='dark'] {
+        --main-bg: var(--dark-main-bg);
+        --mask-bg: var(--dark-mask-bg);
+        --main-border-color: var(--dark-border);
+        --text-color: var(--dark-text);
+        --text-muted-color: var(--dark-muted-text);
+        --link-color: var(--dark-text);
         --link-underline-color: #777b84;
-        --button-bg: #1a1c20;
+        --button-bg: var(--dark-surface);
         --btn-border-color: #383b42;
-        --card-bg: #1a1c20;
-        --sidebar-bg: #17191d;
-        --sidebar-border-color: #303238;
-        --sidebar-hover-bg: #24272c;
-        --sidebar-active-bg: #2b2e34;
+        --card-bg: var(--dark-surface);
+        --sidebar-bg: var(--dark-sidebar);
+        --sidebar-border-color: var(--dark-border);
+        --sidebar-hover-bg: var(--dark-hover);
+        --sidebar-active-bg: var(--dark-active);
         --sidebar-btn-bg: #25282d;
-        --sidebar-btn-color: #f1f2f4;
+        --sidebar-btn-color: var(--dark-text);
         --topbar-bg: rgba(17, 18, 20, 0.9);
-        --topbar-text-color: #f1f2f4;
-        --search-wrapper-bg: #1a1c20;
+        --topbar-text-color: var(--dark-text);
+        --search-wrapper-bg: var(--dark-surface);
         --search-wrapper-border: #3a3d44;
         --search-icon-color: #b9bdc5;
       }
 
-      html[data-mode='dark'] body,
-      html[data-mode='dark'] #main-wrapper {
+      :root[data-bs-theme='dark'] body,
+      :root[data-bs-theme='dark'] #main-wrapper {
         background: var(--main-bg);
       }
     </style>
