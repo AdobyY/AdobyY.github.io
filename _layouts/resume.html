@@ -74,7 +74,7 @@ panel_includes:
 
     function renderDiagram() {
       var preview = previews[activeDiagram];
-      viewerImage.src = preview.dataset.diagramSrc;
+      viewerImage.src = preview.dataset.diagramImage;
       viewerImage.alt = preview.dataset.diagramTitle;
       viewerImage.style.width = (zoom * 100) + '%';
       viewerTitle.textContent = preview.dataset.diagramTitle;

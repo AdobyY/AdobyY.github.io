@@ -79,7 +79,7 @@ Designed the company's product-data processing architecture for receiving hetero
 - Optimized multi-million-row processing jobs and resolved production memory and performance issues.
 
 <div class="architecture-project-diagram">
-  <button class="architecture-preview" type="button" data-diagram-src="{{ '/img/resume/data-platform-delivery-architecture.svg' | relative_url }}" data-diagram-title="Data Platform & Delivery Architecture" data-diagram-description="Multi-source ingestion, orchestration, canonical data-warehouse transformations, internal business systems, APIs, exports, and B2B delivery.">
+  <button class="architecture-preview" type="button" data-diagram-image="{{ '/img/resume/data-platform-delivery-architecture.svg' | relative_url }}" data-diagram-title="Data Platform & Delivery Architecture" data-diagram-description="Multi-source ingestion, orchestration, canonical data-warehouse transformations, internal business systems, APIs, exports, and B2B delivery.">
     <span class="architecture-preview-frame"><img src="{{ '/img/resume/data-platform-delivery-architecture.svg' | relative_url }}" alt="Data Platform and Delivery Architecture diagram" loading="lazy"></span>
     <span class="architecture-preview-copy"><strong>Data Platform &amp; Delivery Architecture</strong><span>Supplier ingestion, data warehouse, business systems, APIs, and B2B delivery</span></span>
     <span class="architecture-preview-action"><i class="fas fa-expand" aria-hidden="true"></i> Explore diagram</span>
@@ -119,7 +119,7 @@ Designed, developed, deployed, and maintain a production B2B ecommerce platform 
 - Personally deployed and operate Linux servers, PostgreSQL, Redis, Celery, Meilisearch, Docker, Nginx, Gunicorn, logging, monitoring, backups, and deployment updates.
 
 <div class="architecture-project-diagram">
-  <button class="architecture-preview" type="button" data-diagram-src="{{ '/img/resume/b2b-application-production-architecture.svg' | relative_url }}" data-diagram-title="B2B Application Production Architecture" data-diagram-description="Production B2B application architecture, infrastructure, services, observability, and external integrations.">
+  <button class="architecture-preview" type="button" data-diagram-image="{{ '/img/resume/b2b-application-production-architecture.svg' | relative_url }}" data-diagram-title="B2B Application Production Architecture" data-diagram-description="Production B2B application architecture, infrastructure, services, observability, and external integrations.">
     <span class="architecture-preview-frame"><img src="{{ '/img/resume/b2b-application-production-architecture.svg' | relative_url }}" alt="B2B Application Production Architecture diagram" loading="lazy"></span>
     <span class="architecture-preview-copy"><strong>B2B Application Production Architecture</strong><span>Application services, infrastructure, observability, and integrations</span></span>
     <span class="architecture-preview-action"><i class="fas fa-expand" aria-hidden="true"></i> Explore diagram</span>
@@ -170,7 +170,7 @@ Worked with Kaggle datasets and participated in machine-learning and NLP competi
   </div>
   <div class="architecture-lightbox-stage">
     <button type="button" class="architecture-lightbox-nav previous" data-diagram-action="previous" aria-label="Previous diagram"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-    <div class="architecture-lightbox-canvas"><img id="architecture-lightbox-image" src="" alt=""></div>
+    <div class="architecture-lightbox-canvas"><img id="architecture-lightbox-image" alt=""></div>
     <button type="button" class="architecture-lightbox-nav next" data-diagram-action="next" aria-label="Next diagram"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
   </div>
   <p id="architecture-lightbox-description" class="architecture-lightbox-description"></p>
