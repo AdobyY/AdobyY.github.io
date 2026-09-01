@@ -78,13 +78,7 @@ Designed the company's product-data processing architecture for receiving hetero
 - Built product, brand, and category normalization and mapping processes.
 - Optimized multi-million-row processing jobs and resolved production memory and performance issues.
 
-<div class="architecture-project-diagram">
-  <button class="architecture-preview" type="button" data-diagram-image="{{ '/img/resume/data-platform-delivery-architecture.svg' | relative_url }}" data-diagram-title="Data Platform & Delivery Architecture" data-diagram-description="Multi-source ingestion, orchestration, canonical data-warehouse transformations, internal business systems, APIs, exports, and B2B delivery.">
-    <span class="architecture-preview-frame"><img src="{{ '/img/resume/data-platform-delivery-architecture.svg' | relative_url }}" alt="Data Platform and Delivery Architecture diagram" loading="lazy"></span>
-    <span class="architecture-preview-copy"><strong>Data Platform &amp; Delivery Architecture</strong><span>Supplier ingestion, data warehouse, business systems, APIs, and B2B delivery</span></span>
-    <span class="architecture-preview-action"><i class="fas fa-expand" aria-hidden="true"></i> Explore diagram</span>
-  </button>
-</div>
+<a class="project-diagram" href="{{ '/img/resume/data-platform-delivery-architecture.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open Data Platform and Delivery Architecture diagram in full size"><img src="{{ '/img/resume/data-platform-delivery-architecture.png' | relative_url }}" alt="Data Platform and Delivery Architecture diagram" loading="lazy"></a>
 
 ### Pricing Management Platform
 
@@ -118,13 +112,7 @@ Designed, developed, deployed, and maintain a production B2B ecommerce platform 
 - Implemented search analytics and collaborated on technical SEO requirements with an external SEO company.
 - Personally deployed and operate Linux servers, PostgreSQL, Redis, Celery, Meilisearch, Docker, Nginx, Gunicorn, logging, monitoring, backups, and deployment updates.
 
-<div class="architecture-project-diagram">
-  <button class="architecture-preview" type="button" data-diagram-image="{{ '/img/resume/b2b-application-production-architecture.svg' | relative_url }}" data-diagram-title="B2B Application Production Architecture" data-diagram-description="Production B2B application architecture, infrastructure, services, observability, and external integrations.">
-    <span class="architecture-preview-frame"><img src="{{ '/img/resume/b2b-application-production-architecture.svg' | relative_url }}" alt="B2B Application Production Architecture diagram" loading="lazy"></span>
-    <span class="architecture-preview-copy"><strong>B2B Application Production Architecture</strong><span>Application services, infrastructure, observability, and integrations</span></span>
-    <span class="architecture-preview-action"><i class="fas fa-expand" aria-hidden="true"></i> Explore diagram</span>
-  </button>
-</div>
+<a class="project-diagram" href="{{ '/img/resume/b2b-application-production-architecture-final-clean.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open B2B Application Production Architecture diagram in full size"><img src="{{ '/img/resume/b2b-application-production-architecture-final-clean.png' | relative_url }}" alt="B2B Application Production Architecture diagram" loading="lazy"></a>
 
 ### [findtechsupply.com](https://findtechsupply.com)
 
@@ -157,24 +145,6 @@ Worked with Kaggle datasets and participated in machine-learning and NLP competi
 
 - Exploratory data analysis, dataset cleaning, feature and input preparation.
 - Model training, evaluation, classification tasks, NLP, experiment iteration, and competition metric improvement.
-
-<section id="architecture-lightbox" class="architecture-lightbox" aria-label="Architecture diagram viewer" aria-modal="true" role="dialog" hidden>
-  <div class="architecture-lightbox-toolbar">
-    <p><strong id="architecture-lightbox-title"></strong><span id="architecture-lightbox-count"></span></p>
-    <div class="architecture-lightbox-controls">
-      <button type="button" data-diagram-action="zoom-out" aria-label="Zoom out"><i class="fas fa-minus" aria-hidden="true"></i></button>
-      <button type="button" data-diagram-action="reset-zoom">Fit</button>
-      <button type="button" data-diagram-action="zoom-in" aria-label="Zoom in"><i class="fas fa-plus" aria-hidden="true"></i></button>
-      <button type="button" data-diagram-action="close" aria-label="Close diagram viewer"><i class="fas fa-times" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="architecture-lightbox-stage">
-    <button type="button" class="architecture-lightbox-nav previous" data-diagram-action="previous" aria-label="Previous diagram"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-    <div class="architecture-lightbox-canvas"><img id="architecture-lightbox-image" alt=""></div>
-    <button type="button" class="architecture-lightbox-nav next" data-diagram-action="next" aria-label="Next diagram"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-  </div>
-  <p id="architecture-lightbox-description" class="architecture-lightbox-description"></p>
-</section>
 
 ## <i class="fas fa-layer-group resume-section-icon" aria-hidden="true"></i> Technical Skills
 

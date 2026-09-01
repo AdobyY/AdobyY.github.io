@@ -62,94 +62,6 @@ panel_includes:
     window.addEventListener('resize', updateActiveLink);
     updateActiveLink();
 
-    var previews = Array.from(document.querySelectorAll('.architecture-preview'));
-    var viewer = document.getElementById('architecture-lightbox');
-    var viewerImage = document.getElementById('architecture-lightbox-image');
-    var viewerTitle = document.getElementById('architecture-lightbox-title');
-    var viewerCount = document.getElementById('architecture-lightbox-count');
-    var viewerDescription = document.getElementById('architecture-lightbox-description');
-    var activeDiagram = 0;
-    var zoom = 1;
-    var openingPreview;
-
-    function renderDiagram() {
-      var preview = previews[activeDiagram];
-      viewerImage.src = preview.dataset.diagramImage;
-      viewerImage.alt = preview.dataset.diagramTitle;
-      viewerImage.style.width = (zoom * 100) + '%';
-      viewerTitle.textContent = preview.dataset.diagramTitle;
-      viewerCount.textContent = (activeDiagram + 1) + ' / ' + previews.length;
-      viewerDescription.textContent = preview.dataset.diagramDescription;
-    }
-
-    function openDiagram(index) {
-      activeDiagram = index;
-      zoom = 1;
-      openingPreview = previews[index];
-      renderDiagram();
-      viewer.hidden = false;
-      document.body.classList.add('diagram-viewer-open');
-      viewer.querySelector('[data-diagram-action="close"]').focus();
-    }
-
-    function closeDiagram() {
-      viewer.hidden = true;
-      document.body.classList.remove('diagram-viewer-open');
-      if (openingPreview) {
-        openingPreview.focus();
-      }
-    }
-
-    previews.forEach(function (preview, index) {
-      preview.addEventListener('click', function () {
-        openDiagram(index);
-      });
-    });
-
-    if (viewer && previews.length) {
-      viewer.addEventListener('click', function (event) {
-        var actionButton = event.target.closest('[data-diagram-action]');
-        if (!actionButton) {
-          return;
-        }
-
-        var action = actionButton.dataset.diagramAction;
-        if (action === 'close') {
-          closeDiagram();
-        } else if (action === 'next' || action === 'previous') {
-          activeDiagram = (activeDiagram + (action === 'next' ? 1 : -1) + previews.length) % previews.length;
-          zoom = 1;
-          renderDiagram();
-        } else if (action === 'zoom-in') {
-          zoom = Math.min(zoom + 0.25, 2.5);
-          renderDiagram();
-        } else if (action === 'zoom-out') {
-          zoom = Math.max(zoom - 0.25, 0.5);
-          renderDiagram();
-        } else if (action === 'reset-zoom') {
-          zoom = 1;
-          renderDiagram();
-        }
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (viewer.hidden) {
-          return;
-        }
-
-        if (event.key === 'Escape') {
-          closeDiagram();
-        } else if (event.key === 'ArrowRight') {
-          activeDiagram = (activeDiagram + 1) % previews.length;
-          zoom = 1;
-          renderDiagram();
-        } else if (event.key === 'ArrowLeft') {
-          activeDiagram = (activeDiagram - 1 + previews.length) % previews.length;
-          zoom = 1;
-          renderDiagram();
-        }
-      });
-    }
   });
 </script>
 
@@ -299,168 +211,23 @@ panel_includes:
     justify-content: center;
   }
 
-  .architecture-project-diagram {
-    margin: 1.25rem 0 2.25rem;
-  }
-
-  .architecture-preview {
-    background: color-mix(in srgb, var(--card-bg) 76%, var(--main-bg));
+  .project-diagram {
     border: 1px solid var(--btn-border-color);
-    border-radius: 0.8rem;
-    color: var(--text-color);
-    cursor: zoom-in;
-    overflow: hidden;
-    padding: 0;
-    text-align: left;
-    transition: border-color 160ms ease, transform 160ms ease;
-  }
-
-  .architecture-preview:hover,
-  .architecture-preview:focus-visible {
-    border-color: #8ab4f8;
-    outline: 0;
-    transform: translateY(-2px);
-  }
-
-  .architecture-preview-frame {
-    background: #f7f7f7;
+    border-radius: 0.7rem;
     display: block;
+    margin: 1.25rem 0 2.25rem;
     overflow: hidden;
   }
 
-  .architecture-preview img {
+  .project-diagram:focus-visible {
+    outline: 2px solid #8ab4f8;
+    outline-offset: 3px;
+  }
+
+  .project-diagram img {
     display: block;
     height: auto;
-    transition: transform 240ms ease;
     width: 100%;
-  }
-
-  .architecture-preview:hover img {
-    transform: scale(1.015);
-  }
-
-  .architecture-preview-copy {
-    display: grid;
-    gap: 0.2rem;
-    padding: 0.85rem 1rem 0.35rem;
-  }
-
-  .architecture-preview-copy strong {
-    font-size: 1rem;
-  }
-
-  .architecture-preview-copy span,
-  .architecture-preview-action {
-    color: var(--text-muted-color);
-    font-size: 0.86rem;
-  }
-
-  .architecture-preview-action {
-    display: inline-flex;
-    gap: 0.4rem;
-    padding: 0 1rem 0.9rem;
-  }
-
-  .architecture-preview-action i {
-    color: #8ab4f8;
-  }
-
-  body.diagram-viewer-open {
-    overflow: hidden;
-  }
-
-  .architecture-lightbox {
-    background: rgba(10, 11, 13, 0.97);
-    color: #f5f6f8;
-    display: grid;
-    grid-template-rows: auto minmax(0, 1fr) auto;
-    height: 100vh;
-    inset: 0;
-    position: fixed;
-    width: 100vw;
-    z-index: 1100;
-  }
-
-  .architecture-lightbox[hidden] {
-    display: none;
-  }
-
-  .architecture-lightbox-toolbar {
-    align-items: center;
-    border-bottom: 1px solid #31343a;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    padding: 0.85rem 1.25rem;
-  }
-
-  .architecture-lightbox-toolbar p {
-    display: flex;
-    gap: 0.75rem;
-    margin: 0;
-  }
-
-  #architecture-lightbox-count {
-    color: #a9adb5;
-  }
-
-  .architecture-lightbox-controls {
-    display: flex;
-    gap: 0.45rem;
-  }
-
-  .architecture-lightbox button {
-    background: #202329;
-    border: 1px solid #3a3e45;
-    border-radius: 0.45rem;
-    color: #f5f6f8;
-    min-height: 2.25rem;
-    min-width: 2.25rem;
-    padding: 0.3rem 0.65rem;
-  }
-
-  .architecture-lightbox button:hover,
-  .architecture-lightbox button:focus-visible {
-    background: #30343b;
-    border-color: #8ab4f8;
-    outline: 0;
-  }
-
-  .architecture-lightbox-stage {
-    align-items: center;
-    display: grid;
-    gap: 0.75rem;
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    min-height: 0;
-    padding: 1rem;
-  }
-
-  .architecture-lightbox-nav {
-    border-radius: 999px !important;
-  }
-
-  .architecture-lightbox-canvas {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: flex-start;
-    overflow: auto;
-  }
-
-  .architecture-lightbox-canvas img {
-    display: block;
-    height: auto;
-    margin: auto;
-    max-width: none;
-    min-width: 100%;
-  }
-
-  .architecture-lightbox-description {
-    color: #a9adb5;
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 0.75rem 1.25rem 1rem;
-    text-align: center;
   }
 
   @media (max-width: 640px) {
@@ -472,19 +239,5 @@ panel_includes:
       grid-column: span 2;
     }
 
-    .architecture-lightbox-toolbar {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
-    .architecture-lightbox-stage {
-      gap: 0.4rem;
-      padding: 0.5rem;
-    }
-
-    .architecture-lightbox-nav {
-      min-width: 2rem !important;
-      padding: 0.25rem !important;
-    }
   }
 </style>
