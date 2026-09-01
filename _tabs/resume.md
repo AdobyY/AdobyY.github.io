@@ -8,11 +8,14 @@ toc: false
 
 # Bohdan Yarinko
 
-**Software Engineer · Technical Project Lead**
+<div class="resume-hero">
+  <p class="resume-role">Software Engineer <span>·</span> Technical Project Lead</p>
+  <p class="resume-focus">Product data platforms, B2B ecommerce, automation, and AI integrations.</p>
+</div>
 
-[yarinko.b@gmail.com](mailto:yarinko.b@gmail.com) · [LinkedIn](https://www.linkedin.com/in/bohdan-yarinko-338816269/) · [GitHub](https://github.com/AdobyY)
+<p class="resume-contact"><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:yarinko.b@gmail.com">yarinko.b@gmail.com</a><span>·</span><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/bohdan-yarinko-338816269/">LinkedIn</a><span>·</span><i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/AdobyY">GitHub</a></p>
 
-## Summary
+## <i class="fas fa-user-tie resume-section-icon" aria-hidden="true"></i> Summary
 
 Software Engineer with hands-on experience designing, building, deploying, and operating production systems end-to-end - from high-volume data pipelines and backend services to frontend applications, infrastructure, CI/CD, monitoring, and business automation.
 
@@ -24,7 +27,7 @@ Since May 2026, I have also been one of the key engineers behind Pascore, a comm
 
 Comfortable taking ownership of a technical problem from requirements and architecture through implementation, deployment, monitoring, and production support. Coordinate project implementation and the work of an assisting developer.
 
-## Experience
+## <i class="fas fa-briefcase resume-section-icon" aria-hidden="true"></i> Experience
 
 ### Software Engineer / Technical Project Lead
 
@@ -61,7 +64,7 @@ Alongside continued development and support of Europarts Ukraine systems, curren
 - Developed, designed and deployed the [Pascore product website](https://pas-core.com).
 - Designed a reusable B2B ecommerce storefront to be offered together with Pascore.
 
-## Selected Projects
+## <i class="fas fa-project-diagram resume-section-icon" aria-hidden="true"></i> Selected Projects
 
 ### Product Data Platform & Data Warehouse
 
@@ -140,19 +143,39 @@ Worked with Kaggle datasets and participated in machine-learning and NLP competi
 - Exploratory data analysis, dataset cleaning, feature and input preparation.
 - Model training, evaluation, classification tasks, NLP, experiment iteration, and competition metric improvement.
 
-## Technical Skills
+## <i class="fas fa-layer-group resume-section-icon" aria-hidden="true"></i> Technical Skills
 
-**Languages & web:** Python, SQL, JavaScript, TypeScript, React, HTML, CSS, Django, Django REST Framework, Flask, REST APIs, OpenAPI, OAuth2, API-driven frontend development.
+<div class="tech-groups" aria-label="Technical stack">
+  <section class="tech-group">
+    <p class="tech-group-label"><i class="fas fa-code" aria-hidden="true"></i> Application & APIs</p>
+    <div class="tech-chip-list">
+      <span class="tech-chip"><img src="https://cdn.simpleicons.org/python/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Python</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/django/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Django</span><span class="tech-chip"><i class="fas fa-plug" aria-hidden="true"></i>Django REST Framework</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/flask/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Flask</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/react/8ab4f8?viewbox=auto" alt="" aria-hidden="true">React</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/javascript/8ab4f8?viewbox=auto" alt="" aria-hidden="true">JavaScript</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/typescript/8ab4f8?viewbox=auto" alt="" aria-hidden="true">TypeScript</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/html5/8ab4f8?viewbox=auto" alt="" aria-hidden="true">HTML</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/css/8ab4f8?viewbox=auto" alt="" aria-hidden="true">CSS</span><span class="tech-chip"><i class="fas fa-code" aria-hidden="true"></i>REST APIs</span><span class="tech-chip"><i class="fas fa-file-code" aria-hidden="true"></i>OpenAPI</span><span class="tech-chip"><i class="fas fa-shield-alt" aria-hidden="true"></i>OAuth2</span><span class="tech-chip"><i class="fas fa-window-maximize" aria-hidden="true"></i>API-driven frontend</span>
+    </div>
+  </section>
 
-**Data & background processing:** Apache Airflow, dbt, DuckDB, ETL/ELT, data warehousing, data modelling, batch processing, data synchronization, data normalization, Celery, Redis, PostgreSQL, MySQL, MariaDB, Meilisearch.
+  <section class="tech-group">
+    <p class="tech-group-label"><i class="fas fa-database" aria-hidden="true"></i> Data, Search & Processing</p>
+    <div class="tech-chip-list">
+      <span class="tech-chip"><img src="https://cdn.simpleicons.org/postgresql/8ab4f8?viewbox=auto" alt="" aria-hidden="true">PostgreSQL</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/mysql/8ab4f8?viewbox=auto" alt="" aria-hidden="true">MySQL</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/mariadb/8ab4f8?viewbox=auto" alt="" aria-hidden="true">MariaDB</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/redis/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Redis</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/meilisearch/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Meilisearch</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/duckdb/8ab4f8?viewbox=auto" alt="" aria-hidden="true">DuckDB</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/apacheairflow/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Apache Airflow</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/dbt/8ab4f8?viewbox=auto" alt="" aria-hidden="true">dbt</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/celery/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Celery</span><span class="tech-chip"><i class="fas fa-table" aria-hidden="true"></i>SQL</span><span class="tech-chip"><i class="fas fa-exchange-alt" aria-hidden="true"></i>ETL/ELT</span><span class="tech-chip"><i class="fas fa-warehouse" aria-hidden="true"></i>Data warehouse</span><span class="tech-chip"><i class="fas fa-sitemap" aria-hidden="true"></i>Data modelling</span><span class="tech-chip"><i class="fas fa-clock" aria-hidden="true"></i>Batch processing</span><span class="tech-chip"><i class="fas fa-sync-alt" aria-hidden="true"></i>Data synchronization</span><span class="tech-chip"><i class="fas fa-search" aria-hidden="true"></i>Data normalization</span>
+    </div>
+  </section>
 
-**Infrastructure & operations:** Linux, Docker, Docker Compose, Nginx, Gunicorn, Hetzner Cloud, Coolify, Ansible, Terraform, OpenTofu, WireGuard, Grafana, Loki, Promtail, application logging, infrastructure monitoring, production troubleshooting, containerized development, production deployment.
+  <section class="tech-group">
+    <p class="tech-group-label"><i class="fas fa-server" aria-hidden="true"></i> Infrastructure & Operations</p>
+    <div class="tech-chip-list">
+      <span class="tech-chip"><img src="https://cdn.simpleicons.org/linux/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Linux</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/docker/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Docker</span><span class="tech-chip"><i class="fas fa-layer-group" aria-hidden="true"></i>Docker Compose</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/nginx/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Nginx</span><span class="tech-chip"><i class="fas fa-server" aria-hidden="true"></i>Gunicorn</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/hetzner/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Hetzner Cloud</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/coolify/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Coolify</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/ansible/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Ansible</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/terraform/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Terraform</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/opentofu/8ab4f8?viewbox=auto" alt="" aria-hidden="true">OpenTofu</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/wireguard/8ab4f8?viewbox=auto" alt="" aria-hidden="true">WireGuard</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/grafana/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Grafana</span><span class="tech-chip"><i class="fas fa-stream" aria-hidden="true"></i>Loki</span><span class="tech-chip"><i class="fas fa-file-alt" aria-hidden="true"></i>Promtail</span><span class="tech-chip"><i class="fas fa-file-alt" aria-hidden="true"></i>Application logging</span><span class="tech-chip"><i class="fas fa-eye" aria-hidden="true"></i>Infrastructure monitoring</span><span class="tech-chip"><i class="fas fa-cubes" aria-hidden="true"></i>Containerized development</span><span class="tech-chip"><i class="fas fa-rocket" aria-hidden="true"></i>Production deployment</span><span class="tech-chip"><i class="fas fa-bug" aria-hidden="true"></i>Production troubleshooting</span>
+    </div>
+  </section>
 
-**Automation & AI:** n8n, Microsoft Power Automate, Microsoft 365, Outlook integrations, LLM integrations, AI-assisted automation, large-scale AI translation, MCP, machine learning, deep learning, NLP, image classification, model fine-tuning.
+  <section class="tech-group">
+    <p class="tech-group-label"><i class="fas fa-robot" aria-hidden="true"></i> Automation, AI & Delivery</p>
+    <div class="tech-chip-list">
+      <span class="tech-chip"><img src="https://cdn.simpleicons.org/n8n/8ab4f8?viewbox=auto" alt="" aria-hidden="true">n8n</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/microsoft/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Microsoft 365</span><span class="tech-chip"><i class="fas fa-bolt" aria-hidden="true"></i>Power Automate</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/microsoftoutlook/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Outlook</span><span class="tech-chip"><i class="fas fa-key" aria-hidden="true"></i>Microsoft Entra ID</span><span class="tech-chip"><i class="fas fa-brain" aria-hidden="true"></i>LLM integrations</span><span class="tech-chip"><i class="fas fa-robot" aria-hidden="true"></i>AI-assisted automation</span><span class="tech-chip"><i class="fas fa-language" aria-hidden="true"></i>AI translation</span><span class="tech-chip"><i class="fas fa-toolbox" aria-hidden="true"></i>MCP</span><span class="tech-chip"><i class="fas fa-cogs" aria-hidden="true"></i>Machine learning</span><span class="tech-chip"><i class="fas fa-network-wired" aria-hidden="true"></i>Deep learning</span><span class="tech-chip"><i class="fas fa-language" aria-hidden="true"></i>NLP</span><span class="tech-chip"><i class="fas fa-image" aria-hidden="true"></i>Image classification</span><span class="tech-chip"><i class="fas fa-microchip" aria-hidden="true"></i>Model fine-tuning</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/git/8ab4f8?viewbox=auto" alt="" aria-hidden="true">Git</span><span class="tech-chip"><img src="https://cdn.simpleicons.org/github/8ab4f8?viewbox=auto" alt="" aria-hidden="true">GitHub</span><span class="tech-chip"><i class="fas fa-code-branch" aria-hidden="true"></i>CI/CD</span>
+    </div>
+  </section>
+</div>
 
-**Collaboration:** Git, GitHub, CI/CD.
-
-## Automation & Business Integrations
+## <i class="fas fa-bolt resume-section-icon" aria-hidden="true"></i> Automation & Business Integrations
 
 Experience building automated business workflows using n8n, Microsoft 365, APIs, and AI. One production-oriented workflow processes incoming customer product requests:
 
@@ -160,15 +183,15 @@ Experience building automated business workflows using n8n, Microsoft 365, APIs,
 
 Experience includes n8n, Microsoft Power Automate, Microsoft 365, Outlook, Microsoft Entra ID, OAuth2, REST APIs, AI integrations, internal product-search APIs, and human-in-the-loop automation.
 
-## Technical Leadership & Project Ownership
+## <i class="fas fa-drafting-compass resume-section-icon" aria-hidden="true"></i> Technical Leadership & Project Ownership
 
 Translate business needs into technical solutions; design architecture; select technologies; break projects into tasks; coordinate implementation with an assisting developer; review approaches; make decisions across backend, data, infrastructure, and frontend; plan and perform deployments; investigate production failures; prioritize improvements; maintain systems after launch; own projects from requirements through production operation.
 
-## Selected Engineering Scale
+## <i class="fas fa-chart-line resume-section-icon" aria-hidden="true"></i> Selected Engineering Scale
 
 2-3 million products in production systems; 10+ million price records; millions of product translations; scraping and enrichment on millions of products; recurring processing of millions of supplier records; multi-source integrations; production full-text search at catalog scale; two production B2B ecommerce platforms; full-stack scope across data, backend, frontend, infrastructure, and monitoring; multiple production Linux servers and containerized services.
 
-## Education
+## <i class="fas fa-graduation-cap resume-section-icon" aria-hidden="true"></i> Education
 
 ### National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
 
@@ -182,6 +205,6 @@ Studied software systems, mathematical and systems modelling, data analysis, pro
 
 Studied the intersection of economics, information systems, quantitative analysis, and programming. Focus areas included programming, information systems, economics, statistics, quantitative analysis, mathematical modelling, business-process analysis, and data analysis.
 
-## Professional Strengths
+## <i class="fas fa-award resume-section-icon" aria-hidden="true"></i> Professional Strengths
 
 End-to-end ownership of software systems; strong Python and backend foundation with practical data-engineering experience; systems design around real business processes; ability to work across backend, data, frontend, infrastructure, and deployment layers; production experience with large catalogs and high-volume pricing data; Linux and production troubleshooting; integration-heavy systems; strong software and business/data workflow understanding; experience coordinating another developer and taking technical ownership.
