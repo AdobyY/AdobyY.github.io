@@ -46,24 +46,20 @@ Design and develop internal software platforms, data infrastructure, automation 
 
 ### Software Engineer / Technical Project Lead
 
-**Commercial Product Initiative - Europarts Ukraine (Pascore)** · May 2026 - Present
+**Pascore — B2B Product Data & Commerce Platform** · May 2026 – Present
 
-Alongside continued development and support of Europarts Ukraine systems, currently designing and building Pascore, a commercial Product Data Automation System intended for deployment at other companies.
+Designing and developing a multi-repository B2B platform for managing large product catalogs, supplier data, pricing, integrations, and ecommerce operations. The system is structured as a nine-repository product ecosystem covering backend services, frontend applications, infrastructure, deployment, observability, documentation, storefronts, public website, and a centralized control plane.
 
-- Pascore takes the experience gained from building internal data pipelines, PIM, pricing, automation, and ecommerce systems and turns it into a reusable software product.
-- Designed its modular architecture with separate backend and frontend applications, external APIs, isolated customer environments, infrastructure automation, observability, and AI integrations.
-- Responsible for core platform functionality: product management, categories, brands, attributes, product translations, product mappings, pricing, imports, exports, users, roles and permissions, search, integrations, API access, background processing, and automation.
-- Designed integrations for external APIs, databases, FTP, XML, CSV, XLSX, and supplier feeds.
-- Designed a reusable pricing engine with multiple price types, configurable pricing rules, supplier coefficients, category- and brand-based conditions, currencies, configurable coefficients, and manual overrides.
-- Built separated frontend/backend architecture using React, TypeScript, and REST APIs.
-- Designed API-first integration with Django REST Framework, OpenAPI, authentication, authorization, and integrations.
-- Implemented and continue developing Model Context Protocol (MCP) support, exposing selected functionality as controlled tools for AI systems.
-- Designed an AI assistant integrated directly with Pascore data and business functionality.
-- Designed multi-customer infrastructure: isolated environments, separate databases, containerized deployments, centralized observability, secure administrative access, automated provisioning, repeatable deployments, and backups.
-- Automated cloud infrastructure provisioning and Linux configuration using Terraform / OpenTofu and Ansible.
-- Built current Pascore infrastructure on Hetzner, with WireGuard private administrative access, self-hosted Coolify, GitHub CI/CD, and centralized Grafana, Loki, and Promtail observability.
-- Developed, designed and deployed the [Pascore product website](https://pas-core.com).
-- Designed a reusable B2B ecommerce storefront to be offered together with Pascore.
+- Architected a commercial product platform spanning nine repositories and multiple independently managed components, covering product-data management, backend APIs, frontend applications, infrastructure automation, observability, storefronts, deployment, documentation, and centralized customer-instance management.
+- Built the core backend around Python, Django, and Django REST Framework for product catalog management, categories, brands, attributes, translations, user access, integrations, imports, exports, and pricing workflows.
+- Designed data ingestion capabilities for heterogeneous sources including APIs, databases, FTP, CSV, XML, and Excel, with mapping and normalization of supplier product data into a unified internal model.
+- Designed the platform for large product catalogs, using PostgreSQL for transactional data, Meilisearch for product search, Redis/Celery for asynchronous workloads, and dedicated processing flows for bulk data operations.
+- Designed a centralized control plane and isolated per-customer deployments, allowing customer environments, databases, domains, access, and infrastructure to be managed independently while maintaining centralized lifecycle and application management.
+- Designed and implemented infrastructure automation around Hetzner, OpenTofu/Terraform, Ansible, Docker, and Coolify, including private networking and WireGuard-based administrative access.
+- Implemented an observability stack around Grafana, Loki, and related monitoring and logging components to provide centralized visibility across deployed environments.
+- Designed the platform to support both product-data management and commerce workflows, including pricing rules, supplier mappings, partner feeds, customer-facing storefronts, and ecommerce integrations.
+- Introduced an API-first architecture between the Django backend and React/TypeScript frontend using OpenAPI contracts and generated API clients to keep frontend/backend integration consistent.
+- Developing an MCP integration layer for controlled interaction with selected product and business operations through external AI clients.
 
 ## <i class="fas fa-project-diagram resume-section-icon" aria-hidden="true"></i> Selected Projects
 
@@ -128,9 +124,13 @@ Designed, developed, and deployed a second production B2B ecommerce platform bui
 - Backend development, product catalog integration, search, pricing, product synchronization, and external integrations.
 - Infrastructure configuration, deployment, production operation, and troubleshooting.
 
-### [pas-core.com](https://pas-core.com)
+### [Pascore — B2B Product Data & Commerce Platform](https://pas-core.com)
 
-Developed and deployed the product website, including development, deployment, server and domain configuration, CI/CD, and production operation.
+Commercial B2B platform for product-data management, supplier integrations, pricing, search, exports, ecommerce workflows, and isolated customer deployments.
+
+Built as a nine-repository product ecosystem spanning backend, frontend, control plane, infrastructure, deployment, observability, storefront, documentation, and public website.
+
+**Core stack:** Python, Django, DRF, PostgreSQL, Redis, Celery, Meilisearch, React, TypeScript, Docker, OpenTofu, Ansible.
 
 <p class="project-diagram-intro">The diagram below presents the Pascore platform architecture, connecting product-data workflows, business services, integrations, infrastructure, and delivery channels.</p>
 
