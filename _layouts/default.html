@@ -17,7 +17,38 @@ layout: compress
   {% include head.html %}
     {% if jekyll.environment == 'production' and site.google_analytics %}
       {% include analytics.html %}
-  {% endif %}
+    {% endif %}
+    <style>
+      /* A restrained, high-contrast dark palette for the Chirpy theme. */
+      html[data-mode='dark'] {
+        --main-bg: #111214;
+        --mask-bg: rgba(17, 18, 20, 0.86);
+        --main-border-color: #303238;
+        --text-color: #f1f2f4;
+        --text-muted-color: #a9adb5;
+        --link-color: #f1f2f4;
+        --link-underline-color: #777b84;
+        --button-bg: #1a1c20;
+        --btn-border-color: #383b42;
+        --card-bg: #1a1c20;
+        --sidebar-bg: #17191d;
+        --sidebar-border-color: #303238;
+        --sidebar-hover-bg: #24272c;
+        --sidebar-active-bg: #2b2e34;
+        --sidebar-btn-bg: #25282d;
+        --sidebar-btn-color: #f1f2f4;
+        --topbar-bg: rgba(17, 18, 20, 0.9);
+        --topbar-text-color: #f1f2f4;
+        --search-wrapper-bg: #1a1c20;
+        --search-wrapper-border: #3a3d44;
+        --search-icon-color: #b9bdc5;
+      }
+
+      html[data-mode='dark'] body,
+      html[data-mode='dark'] #main-wrapper {
+        background: var(--main-bg);
+      }
+    </style>
 </head>
   <body>
     {% include sidebar.html lang=lang %}
