@@ -157,5 +157,26 @@ layout: compress
     {% endif %}
 
     {% include_cached search-loader.html %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var toggle = document.getElementById('mode-toggle');
+        var root = document.documentElement;
+
+        if (!toggle) {
+          return;
+        }
+
+        toggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          var nextTheme = root.dataset.bsTheme === 'dark' ? 'light' : 'dark';
+          root.dataset.bsTheme = nextTheme;
+          root.dataset.themePersisted = '';
+          localStorage.setItem('theme', nextTheme);
+          toggle.setAttribute('aria-label', 'Switch to ' + (nextTheme === 'dark' ? 'light' : 'dark') + ' mode');
+        });
+      });
+    </script>
   </body>
 </html>
