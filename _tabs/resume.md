@@ -42,6 +42,7 @@ Design and develop internal software platforms, data infrastructure, automation 
 - Designed systems covering the complete product-data lifecycle: supplier ingestion, normalization, matching, enrichment, translation, pricing, search, PIM management, ecommerce publishing, and external feeds.
 - Built production systems used by internal managers, pricing specialists, customers, and external business partners.
 - Took ownership not only of application development but also of production deployment, Linux infrastructure, databases, monitoring, and troubleshooting.
+- Conducted technical interviews for engineering candidates, evaluating Python, databases, backend fundamentals, and practical problem-solving skills, and contributed to hiring decisions.
 - Coordinate development work with an assisting developer, break business requirements into implementation tasks, and make architecture and technology decisions.
 
 ### Software Engineer / Technical Project Lead
